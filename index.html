@@ -9,15 +9,16 @@
 </head>
 <body>
 
+    <!-- NAVBAR -->
     <header class="navbar">
         <div class="container nav-container">
-            <a href="index-jnl-main.html" class="navbar-logo">
+            <a href="index.html" class="navbar-logo">
                 <img src="jutaniaga-legasi.jpeg" alt="Juta Niaga Legasi Logo">
             </a>
             
             <nav style="display: flex; align-items: center; flex-wrap: wrap; justify-content: center;">
                 <ul class="nav-links">
-                    <li><a href="index-jnl-main.html" data-en="Home" data-ms="Utama" style="color: var(--legasi-gold);">Home</a></li>
+                    <li><a href="index.html" data-en="Home" data-ms="Utama" style="color: var(--legasi-gold);">Home</a></li>
                     
                     <li class="dropdown">
                         <a href="#" class="dropbtn" data-en="Group of Companies ▾" data-ms="Kumpulan Syarikat ▾">Group of Companies ▾</a>
@@ -36,12 +37,30 @@
         </div>
     </header>
 
-    <section class="hero-split">
-        <div class="hero-left">
-            <p class="welcome-text" data-en="Welcome to Juta Niaga Legasi" data-ms="Selamat Datang ke Juta Niaga Legasi">Welcome to Juta Niaga Legasi</p>
-            <h1 data-en="Building legacies through diverse expertise." data-ms="Membina legasi melalui kepakaran yang pelbagai.">Building legacies through diverse expertise.</h1>
-            <p class="main-description" data-en="We are the parent company driving innovation across real estate sales, property development, and digital solutions. Our focus is on sustainable growth and cultivating top-tier talent." data-ms="Kami adalah syarikat induk yang memacu inovasi merentasi jualan hartanah, pembangunan hartanah, dan penyelesaian digital. Fokus kami adalah pada pertumbuhan mampan dan memupuk bakat peringkat tertinggi.">We are the parent company driving innovation across real estate sales, property development, and digital solutions. Our focus is on sustainable growth and cultivating top-tier talent.</p>
-            
+    <!-- FULL-SCREEN VIDEO HERO -->
+    <section class="hero-video-section">
+        <div class="video-overlay"></div>
+        
+        <!-- High-quality architectural drone video -->
+        <video autoplay loop muted playsinline class="bg-video">
+            <source src="https://cdn.coverr.co/videos/coverr-modern-buildings-in-the-city-4344/1080p.mp4" type="video/mp4">
+        </video>
+        
+        <div class="hero-content-full">
+            <!-- Text stacked exactly like the reference image -->
+            <h1 data-en="Building<br>legacies<br>through diverse<br>expertise." data-ms="Membina<br>legasi<br>melalui kepakaran<br>yang pelbagai.">Building<br>legacies<br>through diverse<br>expertise.</h1>
+        </div>
+
+        <!-- SCROLL DOWN INDICATOR -->
+        <a href="#subsidiaries" class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+            <span data-en="SCROLL DOWN" data-ms="SKROL KE BAWAH">SCROLL DOWN</span>
+        </a>
+    </section>
+
+    <!-- SUBSIDIARY LOGOS STRIP -->
+    <section id="subsidiaries" class="subsidiary-strip">
+        <div class="container">
             <div class="subsidiary-logos">
                 <a href="index-jnr.html" class="sub-logo" title="JNR Capital">
                     <img src="jnr-logo.jpeg" alt="JNR Capital Logo">
@@ -54,16 +73,9 @@
                 </a>
             </div>
         </div>
-
-        <div class="hero-right">
-            <div class="grid-item gi-1"></div> 
-            <div class="grid-item gi-2"></div> 
-            <div class="grid-item gi-3"></div> 
-            <div class="grid-item gi-4"></div> 
-            <div class="grid-item gi-5"></div> 
-        </div>
     </section>
 
+    <!-- ABOUT US SECTION -->
     <section id="about" class="section-padding" style="background-color: var(--bg-light);">
         <div class="container" style="text-align: center; max-width: 800px;">
             <h2 class="section-title" data-en="About Us" data-ms="Tentang Kami">About Us</h2>
@@ -73,6 +85,7 @@
         </div>
     </section>
 
+    <!-- CAREERS TEASER SECTION -->
     <section class="section-padding careers-section">
         <div class="container">
             <h2 class="section-title" data-en="Join Our Legacy" data-ms="Sertai Legasi Kami">Join Our Legacy</h2>
@@ -81,6 +94,7 @@
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container footer-container">
             <h2>JUTA NIAGA LEGASI</h2>
@@ -96,6 +110,7 @@
         </div>
     </footer>
 
+    <!-- DUAL LANGUAGE SCRIPT -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const langToggle = document.getElementById('lang-toggle');
